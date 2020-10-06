@@ -184,7 +184,5 @@ package-lock.json
 ### Links
 
 - <https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file>
-
 - <https://hub.docker.com/_/node>
-
 - <https://github.com/actions/checkout>
