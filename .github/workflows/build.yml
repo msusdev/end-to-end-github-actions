@@ -13,7 +13,7 @@ jobs:
       - name: 'Checkout Code'
         uses: actions/checkout@v2
       - name: 'Run Pandoc Builds'
-        run: ls | grep '.md' | xargs basename -s '.md' | xargs -I % sh -c "pandoc %.md --standalone --slide-level=3 --lua-filter=../.production/prep.lua --reference-doc=../.production/template.pptx --variable=monofont:'Cascadia Code' --output %.pptx"
+        run: ls | grep '.md' | xargs basename -s '.md' | xargs -I % sh -c "pandoc %.md --standalone --slide-level=3 --reference-doc=../.production/template.pptx --variable=monofont:'Cascadia Code' --output %.pptx"
         working-directory: ./presentations
       - name: 'Upload Presentation Artifacts'
         uses: actions/upload-artifact@v2
