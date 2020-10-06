@@ -186,3 +186,9 @@ package-lock.json
 - <https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file>
 - <https://hub.docker.com/_/node>
 - <https://github.com/actions/checkout>
+
+### Next Steps
+
+<https://lab.github.com/msusdev/build-end-to-end-cicd-capabilities-directly-in-github>
+
+## Thanks! Q&A
