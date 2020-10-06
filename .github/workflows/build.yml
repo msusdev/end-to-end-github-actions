@@ -2,7 +2,7 @@ name: 'Produce Presentation Content'
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-pptx:
     name: 'Build PowerPoint Presentation'
