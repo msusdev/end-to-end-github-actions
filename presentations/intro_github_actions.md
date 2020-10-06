@@ -29,6 +29,11 @@ All demos and source code available online:
   * Continuous integration using GitHub Actions
 * Session 3:
   * Deploy applications to Azure using GitHub Actions
+  
+### Agenda
+
+1. Learning the syntax
+1. Building a simple project
 
 ## Getting hands-on with GitHub Actions
 
@@ -181,13 +186,19 @@ package-lock.json
 
 ## Review
 
+### Agenda
+
+1. Learning the syntax
+1. Building a simple project
+1. GitHub Lab
+
 ### Links
 
 - <https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file>
 - <https://hub.docker.com/_/node>
 - <https://github.com/actions/checkout>
 
-### Next Steps
+### GitHub Lab
 
 <https://lab.github.com/msusdev/build-end-to-end-cicd-capabilities-directly-in-github>
 
