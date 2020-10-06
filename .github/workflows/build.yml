@@ -12,9 +12,6 @@ jobs:
     steps:
       - name: 'Checkout Code'
         uses: actions/checkout@v2
-      - name: 'Convert SVG Images to PNG'
-        run: ls | grep '.svg' | xargs basename -s '.svg' | xargs -I % sh -c "inkscape %.svg --export-png=%.png --without-gui"
-        working-directory: ./presentations/diagrams
       - name: 'Run Pandoc Builds'
         run: ls | grep '.md' | xargs basename -s '.md' | xargs -I % sh -c "pandoc %.md --standalone --slide-level=3 --lua-filter=../.production/prep.lua --reference-doc=../.production/template.pptx --variable=monofont:'Cascadia Code' --output %.pptx"
         working-directory: ./presentations

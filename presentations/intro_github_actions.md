@@ -32,8 +32,9 @@ All demos and source code available online:
 
 ## Getting hands-on with GitHub Actions
 
-::: notes
+## Demo: *Learning the syntax*
 
+::: notes
 
 ```yml
 on: push
@@ -140,6 +141,34 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - run: node index.js
+```
+
+:::
+
+## Demo: *Building a simple project*
+
+::: notes
+
+```json
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "moment": "^2.29.1"
+  }
+}
+```
+
+```js
+var moment = require('moment');
+var date = moment().format('LL');
+console.log(date);
+```
+
+```gitignore
+node_modules/
+package-lock.json
 ```
 
 :::
