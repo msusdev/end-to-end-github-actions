@@ -149,6 +149,12 @@ jobs:
 
 ::: notes
 
+```sh
+npm init --force
+npm install --save-dev moment
+touch index.js
+```
+
 ```json
 {
   "name": "app",
