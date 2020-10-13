@@ -11,3 +11,4 @@ To automate the deployment process and help to deploy tested, stable code change
 > *[Download presentations in PPTX format](../../releases/latest)*
 
 1. [Introduction to GitHub Actions](presentations/intro_github_actions.md)
+1. [Continuous integration using GitHub Actions](presentations/ci_github_actions.md)
