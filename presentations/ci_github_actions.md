@@ -3,7 +3,7 @@ title: Continuous integration using GitHub Actions
 author: Part 2 of 3 in the [Build end-to-end CI/CD capabilities directly in GitHub](https://github.com/MSUSDEV/end-to-end-github-actions) series
 ---
 
-# Introduction to GitHub Actions
+# Continuous integration using GitHub Actions
 
 ## Overview
 
@@ -239,9 +239,6 @@ All demos and source code available online:
 - <https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idneeds>
 - <https://github.com/actions/create-release>
 - <https://docs.github.com/actions/reference/context-and-expression-syntax-for-github-actions#contexts>
-
-### Links (cont.)
-
 - <https://github.com/marketplace/actions/zip-release>
 - <https://github.com/actions/upload-release-asset>
 - <https://docs.github.com/actions/guides/publishing-docker-images>
