@@ -44,7 +44,7 @@ All demos and source code available online:
 
 ::: notes
 
-##### Automate Build
+### Automate Build
 
 1. Build and validate web project
 
@@ -75,10 +75,10 @@ All demos and source code available online:
 
     ```yml
     - name: Upload static site
-    uses: actions/upload-artifact@v2
-    with:
-      name: static-site
-      path: .next/
+      uses: actions/upload-artifact@v2
+      with:
+        name: static-site
+        path: .next/
     ```
 
 1. Create release job
@@ -93,10 +93,10 @@ All demos and source code available online:
 1. Download artifact
 
     ```yml
-    - name: Download static site content
-    uses: actions/download-artifact@v2
-    with:
-      name: static-site
+    - name: Download site content
+      uses: actions/download-artifact@v2
+      with:
+        name: site-build
     ```
 
 1. View contents of downloaded artifact
@@ -122,27 +122,27 @@ All demos and source code available online:
 1. Compress folder
 
     ```yml
-    - name: Archive folder
+    - name: Archive site content
       uses: thedoctor0/zip-release@master
       with:
-        filename: static-site.zip
+        filename: site.zip
     ```
 
 1. Upload asset to release
 
-    ```yml    
+    ```yml
     - name: Upload release asset
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create-new-release.outputs.upload_url }}
-        asset_path: ./static-site.zip
-        asset_name: static-site-${{ github.run_number }}.zip
+          asset_path: ./site.zip
+          asset_name: site-v${{ github.run_number }}.zip
         asset_content_type: application/zip
     ```
 
-##### Dockerize app
+### Dockerize app
 
 1. Create Dockerfile
 
@@ -224,7 +224,7 @@ All demos and source code available online:
 
 ## Review
 
-### Agenda
+### Agenda (revisted)
 
 1. Exploring a sample Next.js web application
 1. Building and validating the project
@@ -234,15 +234,15 @@ All demos and source code available online:
 
 ### Links
 
-- <https://github.com/actions/upload-artifact>
-- <https://github.com/actions/download-artifact>
-- <https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idneeds>
-- <https://github.com/actions/create-release>
-- <https://docs.github.com/actions/reference/context-and-expression-syntax-for-github-actions#contexts>
-- <https://github.com/marketplace/actions/zip-release>
-- <https://github.com/actions/upload-release-asset>
-- <https://docs.github.com/actions/guides/publishing-docker-images>
-- <https://github.com/docker/build-push-action/tree/releases/v1>
+* <https://github.com/actions/upload-artifact>
+* <https://github.com/actions/download-artifact>
+* <https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idneeds>
+* <https://github.com/actions/create-release>
+* <https://docs.github.com/actions/reference/context-and-expression-syntax-for-github-actions#contexts>
+* <https://github.com/marketplace/actions/zip-release>
+* <https://github.com/actions/upload-release-asset>
+* <https://docs.github.com/actions/guides/publishing-docker-images>
+* <https://github.com/docker/build-push-action/tree/releases/v1>
 
 ### GitHub Lab
 

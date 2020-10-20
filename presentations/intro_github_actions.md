@@ -186,7 +186,7 @@ package-lock.json
 
 ## Review
 
-### Agenda
+### Agenda (revisted)
 
 1. Learning the syntax
 1. Building a simple project
@@ -194,9 +194,9 @@ package-lock.json
 
 ### Links
 
-- <https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file>
-- <https://hub.docker.com/_/node>
-- <https://github.com/actions/checkout>
+* <https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file>
+* <https://hub.docker.com/_/node>
+* <https://github.com/actions/checkout>
 
 ### GitHub Lab
 
