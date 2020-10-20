@@ -12,3 +12,4 @@ To automate the deployment process and help to deploy tested, stable code change
 
 1. [Introduction to GitHub Actions](presentations/intro_github_actions.md)
 1. [Continuous integration using GitHub Actions](presentations/ci_github_actions.md)
+1. [Deploy applications to Azure using GitHub Actions](presentations/cd_github_actions.md)
