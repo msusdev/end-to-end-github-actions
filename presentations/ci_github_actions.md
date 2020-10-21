@@ -46,6 +46,8 @@ All demos and source code available online:
 
 ### Automate Build
 
+1. Get the web project (<https://github.com/msusdev/example-next-web-app>)
+
 1. Build and validate web project
 
     ```sh
@@ -156,7 +158,7 @@ All demos and source code available online:
     RUN npm install
     RUN npm run build
 
-    EXPOSE 3000
+    EXPOSE 80
 
     CMD npm run start
     ```
