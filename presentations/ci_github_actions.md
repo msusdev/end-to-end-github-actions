@@ -139,8 +139,8 @@ All demos and source code available online:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create-new-release.outputs.upload_url }}
-          asset_path: ./site.zip
-          asset_name: site-v${{ github.run_number }}.zip
+        asset_path: ./site.zip
+        asset_name: site-v${{ github.run_number }}.zip
         asset_content_type: application/zip
     ```
 
