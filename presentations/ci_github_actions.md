@@ -208,7 +208,7 @@ All demos and source code available online:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
-        repository: msusdev/example-next-web-app/webnext
+        repository: ${{ github.repository }}/webnext
         tags: latest, ${{ github.run_number }}
     ```
 
